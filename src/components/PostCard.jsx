@@ -12,7 +12,7 @@ function PostCard({$id,title,featuredImage}) {
         <img
         src={appwriteService.getFileView(featuredImage)}
         alt={title}
-        className='rounded-xl'/>
+         className="w-full h-60 object-cover rounded-xl"/>
         
         </div>
         <h2 className='text-xl font-bold'>

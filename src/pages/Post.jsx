@@ -40,7 +40,7 @@ export default function Post() {
                         
                         src={appwriteService.getFileView(post.featuredImage)}
                         alt={post.title}
-                        className="rounded-xl"
+                        className="w-full h-60 object-cover rounded-xl"
                     />
 
 

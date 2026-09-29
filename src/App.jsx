@@ -1,6 +1,6 @@
 import { useState,useEffect, } from 'react';
 import { useDispatch } from 'react-redux';
-import './App.css'
+
 import authService from './appwrite/auth';
 import { Outlet } from 'react-router-dom';
 import {Header,Footer} from './components'
