@@ -66,7 +66,7 @@ BlogWrite/
 ### Clone the repository
 
 ```bash
-git clone https://github.com/Vaibhavjain-00/Blogwrite.git
+git clone https://github.com/vikalp9236/Blog-Write.git
 ```
 
 ### Navigate to the project
@@ -106,22 +106,6 @@ The application will run at
 
 ```
 http://localhost:5173
-```
-
----
-
-## 📸 Screenshots
-
-Add screenshots here.
-
-Example:
-
-```
-screenshots/
-    home.png
-    login.png
-    add-post.png
-    post-details.png
 ```
 
 ---
