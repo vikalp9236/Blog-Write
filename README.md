@@ -66,7 +66,7 @@ BlogWrite/
 ### Clone the repository
 
 ```bash
-git clone https://github.com/Vaibhavjain-00/Blogwrite.git
+git clone https://github.com/vikalp9236/Blog-Write.git
 ```
 
 ### Navigate to the project
