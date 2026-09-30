@@ -110,22 +110,6 @@ http://localhost:5173
 
 ---
 
-## 📸 Screenshots
-
-Add screenshots here.
-
-Example:
-
-```
-screenshots/
-    home.png
-    login.png
-    add-post.png
-    post-details.png
-```
-
----
-
 ## 📚 What I Learned
 
 - Building React applications using functional components
