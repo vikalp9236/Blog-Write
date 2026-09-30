@@ -20,12 +20,16 @@ function PostForm({post}) {
   state => state.auth.userData
 )
             const submit=async(data)=>{
+                 if (!userData?.$id) {
+        alert("User data not loaded. Please refresh and try again.");
+        return;
+    }
                 if(post){
-                const file = data.image
+                const file = data.image?.[0]
                ? await appwriteService.uploadFile(data.image[0])
                 : null
                  if(file){
-                    appwriteService.deleteFile(post.
+                   await  appwriteService.deleteFile(post.
                         featuredImage)
                  }
                  const dbpost=await appwriteService.updatePost
@@ -40,9 +44,16 @@ function PostForm({post}) {
                  }else {
                  const file=await appwriteService.uploadFile
                  (data.image[0]);
-               if(file){
+
+              if (!file) {
+           alert("Image upload failed");
+             return;
+      }
                 const fileId=file.$id
-                data.featuredImage=fileId
+                data.featuredImage=fileId;
+                 
+    
+
                 const dbPost =await appwriteService.
                 createPost({
                     ...data,
@@ -51,7 +62,7 @@ function PostForm({post}) {
                 if(dbPost){
                     navigate(`/post/${dbPost.$id}`)
                 }
-               }
+               
 
                 }
             }
@@ -126,7 +137,7 @@ useEffect(()=>{
   {post&&(
     <div className="w-full mb-4">
         <img 
-        src={ appwriteService.getFilePreview(post.
+        src={ appwriteService.getFileView(post.
             featuredImage)}
             alt={post.title}
             className="rounded-lg"
