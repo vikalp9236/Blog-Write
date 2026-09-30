@@ -53,7 +53,7 @@ function Signup() {
                     Sign In
                 </Link>
             </p>
-            {error&&<p clasName="text-red-600 mt-8
+            {error&&<p className="text-red-600 mt-8
             text-center">{error}</p>}
             <Form onSubmit={handleSubmit(create)}>
                 <div className='space-y-5'>
